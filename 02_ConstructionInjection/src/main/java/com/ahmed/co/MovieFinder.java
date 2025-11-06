@@ -6,9 +6,9 @@ import java.util.List;
 //Dependency Class
 public class MovieFinder {
 
-	ArrayList<Movie> movieFinder;
+	ArrayList<Movie> movieFinder;// creating array list <Movies> 
 
-	public MovieFinder() {
+	public MovieFinder() {// this is parameter less constructor to create array list <Movies> object and add the movies
 		movieFinder = new ArrayList<>();
 		movieFinder.add(new Movie(2024, "Pushpa2"));
 		movieFinder.add(new Movie(2024, "Lucky Basaer"));
