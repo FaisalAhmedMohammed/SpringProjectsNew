@@ -7,16 +7,16 @@ import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction;
 //Dependent Class
 public class MovieLister {
 
-	MovieFinder movieFinder;
+	MovieFinder movieFinder; 
 
-	public MovieLister(MovieFinder movieFinder) {
+	public MovieLister(MovieFinder movieFinder) { // construction injection
 		this.movieFinder = movieFinder;
 	}
 
 	public void showMovies(int year) {
-		List<Movie> movies = movieFinder.getMovies(year);
+		List<Movie> movies = movieFinder.getMovies(year); //calling dependency class method 
 
-		if (movies == null || movies.isEmpty()) {
+		if (movies == null || movies.isEmpty()) {// checking if the year does not contains movies 
 			System.out.println("No movies found in this year : " + year);
 
 		} else {
