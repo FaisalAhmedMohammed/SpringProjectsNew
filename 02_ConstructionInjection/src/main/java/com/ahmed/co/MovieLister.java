@@ -2,6 +2,8 @@ package com.ahmed.co;
 
 import java.util.List;
 
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction;
+
 //Dependent Class
 public class MovieLister {
 
@@ -13,8 +15,15 @@ public class MovieLister {
 
 	public void showMovies(int year) {
 		List<Movie> movies = movieFinder.getMovies(year);
-		for (Movie movie : movies) {
-			System.out.println("Year : " + movie.getYear() + " =  Movie Name :" + movie.getName());
+
+		if (movies == null || movies.isEmpty()) {
+			System.out.println("No movies found in this year : " + year);
+
+		} else {
+			System.out.println("Movies released in year :" + year);
+			for (Movie movie : movies) {
+				System.out.println(movie.getYear() + " -- " + movie.getName());
+			}
 		}
 
 	}

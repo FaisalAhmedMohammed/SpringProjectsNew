@@ -10,11 +10,11 @@ public class MovieFinder {
 
 	public MovieFinder() {
 		movieFinder = new ArrayList<>();
-		movieFinder.add(new Movie(2024, "pushpa2"));
-		movieFinder.add(new Movie(2024, "lucky basaer"));
-		movieFinder.add(new Movie(2024, "bhool bhulliya"));
-		movieFinder.add(new Movie(2025, "kgf2"));
-		movieFinder.add(new Movie(2025, "pathan"));
+		movieFinder.add(new Movie(2024, "Pushpa2"));
+		movieFinder.add(new Movie(2024, "Lucky Basaer"));
+		movieFinder.add(new Movie(2024, "Bhool Bhulliya"));
+		movieFinder.add(new Movie(2025, "Kgf2"));
+		movieFinder.add(new Movie(2025, "Pathan"));
 	}
 
 	public List<Movie> getMovies(int year) {
