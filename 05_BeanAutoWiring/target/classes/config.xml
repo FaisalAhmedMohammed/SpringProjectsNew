@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="ReportManager" class="in.ahmed.beans.ReportManager" autowire="byType">
+	<constructor-arg name="pages" value="15"></constructor-arg>
+	</bean>
+
+	<bean id="pdfReport" class="in.ahmed.beans.pdfReportCreator" ></bean>
+
+	<bean id="excelReport" class="in.ahmed.beans.ExcelReportCreater" primary="true"></bean>
+</beans>
