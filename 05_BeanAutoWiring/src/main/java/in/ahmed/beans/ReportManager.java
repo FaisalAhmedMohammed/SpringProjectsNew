@@ -6,7 +6,7 @@ public class ReportManager {
 
 	ReportCreator reportCreator; // dependent class object as reference variable
 
-	private int pages;          // dependent object as primitive
+	private int pages;          // dependent object as primitive value
 
 	public ReportManager(int pages) {
 		this.pages = pages;
