@@ -1,5 +1,13 @@
 package in.ahmed.co.model;
 
+/*This program is to show how to inject the dependency of a collection type (HashMap)
+ *  in a Spring application.
+Here, we are going to inject a HashMap<String, Plan> bean containing multiple 
+Plan objects using the Java-based configuration (@Configuration and @Bean annotations).
+
+The HashMap will store the data in the form of key-value pairs,
+ where the key is the plan code (like "p-101") and the value is a Plan object
+  containing details such as plan id, validity, description, and price.*/
 public class Plan {
 
 	private int planid;
