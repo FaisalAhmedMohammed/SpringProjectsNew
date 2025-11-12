@@ -1,8 +1,6 @@
 package in.ahmed.co.main;
 
 import java.util.HashMap;
-import java.util.Map.Entry;
-import java.util.Set;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
