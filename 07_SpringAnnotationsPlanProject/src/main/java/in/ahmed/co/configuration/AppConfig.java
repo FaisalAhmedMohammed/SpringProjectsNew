@@ -16,7 +16,8 @@ public class AppConfig {
 			// we need to create the object
 	public HashMap<String, Plan> hashMap() {
 
-		HashMap<String, Plan> hm = new HashMap<>();
+		HashMap<String, Plan> hm = new HashMap<>(); // here i am creating hash map object
+		
 		hm.put("p-101", new Plan(101, 20, "2.0 GB unlimited with 100 Sms", 349));
 		hm.put("p-102", new Plan(102, 28, "2.0 GB unlimited with 100 Sms", 349));
 		hm.put("p-103", new Plan(103, 1, " unlimited with 100 Sms", 100));
