@@ -25,11 +25,11 @@ public class Main {
 		System.out.println("=".repeat(70));
 
 		HashMap<String, Plan> all = serivce.getAll();
-		
+
 		Set<Entry<String, Plan>> entrySet = all.entrySet();
-		
+
 		for (Entry<String, Plan> entry : entrySet) {
-			
+
 			System.out.println(entry.getKey() + " --- " + entry.getValue());
 
 		}

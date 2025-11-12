@@ -12,7 +12,7 @@ import in.ahmed.beans.Model.Plan;
 @Configuration
 @ComponentScan("in.ahmed.beans")
 public class AppConfig {
-
+	
 	@Primary
 	@Bean
 	public HashMap<String, Plan> hashMap() {
@@ -23,7 +23,7 @@ public class AppConfig {
 		return hs;
 	}
 
-	@Primary
+	
 	@Bean
 	public HashMap<String, Plan> hashMap2() {
 		HashMap<String, Plan> hs = new HashMap<>();
