@@ -9,7 +9,7 @@ public class EmailService {
 	@Value("${smpt.host}")
 	private String smtpHost;
 
-	@Value("${smpt.port}")
+	@Value("${port}")
 	private int smptPort;
 
 	@Value("${smpt.toaddress}")

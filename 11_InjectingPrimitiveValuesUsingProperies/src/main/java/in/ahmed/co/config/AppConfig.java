@@ -6,8 +6,9 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ComponentScan("in.ahmed.co")
-@PropertySource("Email.properties")
+
 @PropertySource("db.properties")
+@PropertySource("Email.properties")
 public class AppConfig {
 
 }

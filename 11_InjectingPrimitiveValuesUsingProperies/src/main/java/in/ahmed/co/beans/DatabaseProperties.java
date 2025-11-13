@@ -8,7 +8,7 @@ public class DatabaseProperties {
 	@Value("${db.url}")
 	private String url;
 	
-	@Value("${db.port}")
+	@Value("${port}")
 	private int port;
 	
 	@Value("${db.username}")
